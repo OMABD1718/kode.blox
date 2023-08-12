@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists | Kode.Blox</title>
+    <link rel="shortcut icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Comments, Paragraph, Headings, Background image, background color, 
+    text color, align text">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+
+
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">HTML : Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
+            <li><a href="./4font-styling.html">Font Styling</a></li>
+            <li><a href="./5lists.html">Lists in HTML</a></li>
+            <li><a href="#">Topic 6</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>List Tags in HTML</b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <p><ul style="list-style: square;">
+                <li>Listing is one of the most efficient ways to present information.</li>
+                <li>Therefore, HTML also allows you present your data in the form of lists.</li>
+                <li>HTML lets you make the following types of lists:
+                    <ol>
+                        <li>Unordered List</li>
+                        <li>Ordered List</li>
+                        <li>Defination List</li>
+                    </ol>
+                </li>
+            </ul></p>
+        </div>
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Unordered Lists
+                    (<span class="bracket">&lt;</span><span class="tag">ul</span><span class="bracket">&gt;</span>)
+                </h3>
+                <p>The <span class="bracket">&lt;</span><span class="tag">ul</span><span class="bracket">&gt;</span>
+                tag is used to display an unordered list.</p>
+                <p>The browser presents the items of an unordered list in bullets.</p>
+                <br>
+
+                <h5>List item (<span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>)</h5>
+                <p>The <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span> tag
+                is used to display the items in a list.</p><br>
+                <p>For Example: <br><span class="bracket">&lt;</span><span class="tag">ul</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>HTML and CSS<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Web Design Simplified<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Web Development for Beginners<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">/ul</span><span class="bracket">&gt;</span>
+                </p>
+                <br>
+
+                <h5>Type Attribute</h5>
+                <p>This attribute lets you specify the type of bullet to be used.</p>
+                <p>The values for the type attribe are: 
+                    <ul  style="margin-left: 1.5rem;"><li>Disc - Filled circle bullet</li></ul>
+                    <ul  style="margin-left: 1.5rem; list-style-type: circle;"><li>Circle - Non-filled circle bullet</li></ul>
+                    <ul  style="margin-left: 1.5rem; list-style-type: square;"><li>Square - Filled square bullet</li></ul>
+                </p>
+                <p>The default value of type attribute is disc.</p>
+            </div>
+            <hr>
+            
+            <div class="first-section">
+                <h3>Ordered Lists
+                    (<span class="bracket">&lt;</span><span class="tag">ol</span><span class="bracket">&gt;</span>)
+                </h3>
+                <p>The <span class="bracket">&lt;</span><span class="tag">ol</span><span class="bracket">&gt;</span>
+                tag is used to display an Ordered list.</p>
+                <p>The ordered list is used to specify the order of the items in a list.</p>
+                <br>
+
+                <h5>List item (<span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>)</h5>
+                <p>The <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span> tag
+                is used to display the items in a list.</p><br>
+                <p>For Example: <br><span class="bracket">&lt;</span><span class="tag">ol</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>HTML and CSS<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Web Design Simplified<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Web Development for Beginners<span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">/ol</span><span class="bracket">&gt;</span>
+                </p>
+                <br>
+
+                <h5>Type Attribute</h5>
+                <p>This attribute lets you specify the type of number style to be used.</p><br>
+                <table>
+                    <tr>
+                        <th>Number Style</th><th>Description</th><th>Example</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">a</td><td>Lower case letters</td><td>a,b,c,...</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">A</td><td>Upper case letters</td><td>A,B,C,...</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">i</td><td>Lower case Roman Numerals</td><td>i,ii,iii,...</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">I</td><td>Upper case Roman Numerals</td><td>I,II,III,...</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">1</td><td>Numbers</td><td>1,2,3,...</td>
+                    </tr>
+                </table>
+                <p>The default value of type attribute for ordered list is numbers.</p>
+                <br>
+                <h5>Start Attribute</h5>
+                <p>This attribute lets you specify the list number from where the numbering of the list should begin.</p>
+                <p>For Example: If you type <span class="bracket">&lt;</span><span class="tag">ol </span><span class="attribute">start</span> =<span class="value">"45"</span><span class="bracket">&gt;</span>, 
+                the numbering of the ordered list will start from 45.</p>
+                <p>The default start value is 1.</p>
+
+            </div>
+            <!------X----- First Section -----X------>
+            <hr> 
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Definition Lists (<span class="bracket">&lt;</span><span class="tag">dl</span><span class="bracket">&gt;</span>)</h5></h3>
+                <p>The <span class="bracket">&lt;</span><span class="tag">dl</span><span class="bracket">&gt;</span>
+                tag is used to present a list of definitions.</p>
+                <p>It contains pairs of DT(Definition Term) and DD(Definition Description) elements.</p>
+                <p>For Example:</p>
+                <div class="img">
+                    <img style="width: 55%;" src="definition-lists.png" alt="Definition List, Definition Term and Definition Description.">
+                </div>
+                <hr style="margin: 2rem 0rem;">
+
+                <h3>Nested List</h3>
+                <p>A list is called as a Nested List when it is created within a list.</p>
+                <p>In other words, lists can be embedded within other lists.</p>
+                <p class="note-two">Lists are embedded within other lists by typing it within the 
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span> tag.</p>
+                <p>You can also embed other elements like paragraphs, headings, hyperlinks, images, etc. within a list.</p>  
+            </div>
+            <!------X----- First Section ------X----->
+
+            <hr class="mobile-hide tablet-hide">
+            
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+
+                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                    <h5 style="padding: 10px;">For Example:</h5>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">dl</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">dt</span><span class="bracket">&gt;</span>Workout Routine
+                        <span class="bracket">&lt;</span><span class="tag">/dt</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">dd</span><span class="bracket">&gt;</span>A list of physical exersises that you do in order to keep fit.
+                        <span class="bracket">&lt;</span><span class="tag">/dd</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/dl</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">hr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">ul </span><span class="attribute">type</span>=<span class="value">"circle"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Gym Exercises :<br>
+                        <span class="bracket">&lt;</span><span class="tag">ol </span><span class="attribute">type</span>=<span class="value">"i"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Barbell / Dumbbell Bench Press(Incline, Flat, Decline).
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Barbell / Dumbbell Rows.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Hip Thrust.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Weighted Calf Raises.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Deadlifts.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/ol</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Home Workout :<br>
+                        <span class="bracket">&lt;</span><span class="tag">ol </span><span class="attribute">type</span>=<span class="value">"i"</span>
+                        <span class="attribute">start</span>=<span class="value">"6"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Push-ups.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Dips.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Pull-ups.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Chin-ups.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Bodyweight Squats.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Walking lunges.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Plank.
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/ol</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/ul</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./4font-styling.html"  title="HTML Font Styling"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./6images.html" title="Inserting Images"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

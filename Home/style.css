@@ -1,0 +1,347 @@
+@import url('../CSS common/font.css');
+
+html body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#top{
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    /* Gradient color */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --blue-pink-grad: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    --white-violet-grad: linear-gradient(to top, #ffffff 0%, blueviolet 100%); 
+    --black-white: linear-gradient(to left, #0f0f0f 0%, #ffffff 100%);
+    --grad: linear-gradient(to right, #5d49d3 0%, #ffffff 100%);
+    --grad-inverse: linear-gradient(to left, #5d49d3 0%, #ffffff 100%);
+    --grad-horizontal: linear-gradient(180deg, #5d49d3 0%, #ffffff 100%);
+    
+
+
+    /* Theme font family */
+    --Abel: Abel; 
+    --Anton: Anton;
+    --Josefin: Josefin;
+    --JosefinExtraLight: Josefin-Extralight;
+    --Lexend: Lexend;
+    --Livvic: Livvic;
+    --LivvicExtraLight: Livvic-Extralight;
+    --Righteous: Righteous;
+    --Thasadith: Thasadith;
+    --Kanit: Kanit;
+}
+
+
+/* ---------------------Global Classes--------------------- */
+
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ------------X--------Global Classes-----------X--------- */
+
+
+/* -------------------------------Navigation------------------------------- */
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 14vh;
+    overflow: hidden;
+    transition: height 1.5s ease-in-out;
+    position: relative;
+    box-shadow: 0px 4px 5px gray;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 85%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: rgb(22, 22, 36);
+}
+
+.collapse{
+    height: 32rem;
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.9rem 1rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+/*  For Underlining the text
+.nav .nav-items .nav-link::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width .5s;
+}
+
+.nav .nav-items .nav-link:hover::after{
+    width: 100%;
+    transition: width .5s ease-in;
+}
+*/   
+
+.nav .nav-items .nav-link a{
+    font-style: var(--Lexend);
+    color: black;
+}
+
+.nav .nav-items .nav-link:hover{
+    transform: scale(1.05);
+    background: white;
+    box-shadow: 0px 0px 4px black;
+}
+
+.nav .nav-brand a{
+    font-size: 2.4rem;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.nav .nav-brand a:hover{
+    color: rgb(0, 183, 255);
+}
+
+.nav .social{
+    padding: 2rem 0;
+    font-size: 1.3rem;
+}
+
+.nav .social i{
+    padding: 0 .3rem;
+    color: black;
+}
+
+.nav .social i:hover{
+    color: red;
+    transform: scale(1.3);
+}
+/* -------X-------------X-------Navigation--------X----------X--------- */
+
+
+/* ------------------------------Main Body------------------------------ */
+
+/* ------------------- Introduction Section ------------------- */
+
+main section.site-title{
+    background: var(--grad-horizontal);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+section.site-title img{
+    align-self: left;
+    padding: 0rem 0rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    filter: drop-shadow(1px 1px 4px);
+}
+
+section.site-title h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 2rem;
+    font-family: var(--Righteous);
+}
+
+section.site-title p span{
+    font-size: 25px; 
+    font-family: var(--Thasadith);
+}
+
+section.site-title p{
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--Kanit);
+    padding: 0rem 5rem;
+}
+
+section.site-title button{
+    margin: 1rem .3rem;
+    padding: 1rem 2rem;
+    background: rgb(100, 100, 255);
+    font-size: 1.2rem;
+    font-family: var(--Josefin);
+    box-shadow: 0px 0px 5px rgb(75, 75, 75);
+}
+
+section.site-title button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px rgb(75, 75, 75);
+}
+
+section.site-title button a.start{
+    color: black;
+}
+/* --------X---------- Introduction Section ----------X-------- */
+
+/* --------------------- Courses Section --------------------- */
+/* --------X------------ COurses Section ------------X-------- */
+
+
+/* --------X------------X--------Main Body-------X--------------X------- */
+
+
+/* ---------------------Footer------------------------- */
+
+footer.footer{
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+footer.footer .container{
+    background: black;
+} 
+
+footer.footer .container .about-us{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: .5rem .9rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+footer.footer .about-us p{
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0px 10px;
+    color: rgb(180, 180, 180);
+}
+
+footer.footer .about-us p a{
+    color: gray;
+    font-style: italic;
+}
+
+footer.footer .rights{
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    padding: .5rem 0rem;
+}
+
+footer.footer hr{
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+footer.footer .rights a{
+    color: white;
+}
+
+footer.footer .move-up a{
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    color: rgb(128, 128, 128);
+}
+
+footer.footer .move-up:hover a{
+    color: white;
+    cursor: pointer;
+}
+/* -----------X---------Footer-------------X----------- */
+
+
+
+/* --------Viewport less than or equal to 480px-------- */
+@media only screen and (max-width: 480px){
+    body{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    hr{
+        margin: 1rem !important;
+    }
+
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    section.site-title{
+        grid-template-columns: 100% !important;
+        background: var(--grad-horizontal) !important;
+    }
+
+    section.site-title img{
+        display: none;
+    }
+
+    section.site-title h1{
+        font-size: 30px;
+        text-align: center;
+        padding: 1rem 0rem ;
+    }
+
+    section.site-title p{
+        padding: 1rem 0rem;
+    }
+
+    .footer .container{
+        text-align: center !important;
+    }
+    .footer .container .about-us p{
+        text-align: left !important;
+        padding: 0px !important;
+    }
+
+}
+/* ----X---Viewport less than or equal to 480px---X---- */

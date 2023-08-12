@@ -1,0 +1,512 @@
+@import url('../CSS common/font.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+:root{
+    /* Theme font family */
+    --Abel: Abel;
+    --Josefin: Josefin;
+    --Livvic: Livvic;
+
+    --name: 'Roboto Slab', serif;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(238, 238, 238);
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 2rem;
+    font-family: var(--Abel);
+}
+h5{
+    font-size: 1.5rem;
+    font-family: var(--Abel);
+}
+
+img{
+    margin: .5rem 0rem;
+}
+
+.note{
+    padding: 3px 13px;
+    font-size: 1.4rem;
+    font-family: var(--Livvic);
+    display: inline-block;
+    background: rgb(255, 140, 140);
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    margin: .5rem 0rem;
+}
+.note-two{
+    padding: 3px 13px;
+    font-family: var(--Livvic);
+    font-size: 1.4rem;
+    display: inline-block;
+    background: #a1b2fd;
+    border-left: 4px solid blue;
+    border-right: 4px solid blue;
+    margin: .5rem 0rem;
+}
+.note-extra{
+    padding: 3px 10px;
+    font-family: var(--Livvic);
+    font-size: 1.4rem;
+    background: #a1b2fd;
+    border: 2px solid blue;
+    border-radius: 3px;
+    margin: 1rem 1rem;
+}
+.note-extra .extra-image{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.tag{
+    color: blue;
+}
+.attribute{
+    color: rgb(83, 110, 199);
+}
+.value{
+    color: red;
+}
+.bracket{
+    color: gray;
+}
+
+.laptop-hide{
+    display: none;
+}
+
+/* -------------------- Sidebar -------------------- */ 
+.sidebar {
+    position: fixed;
+    z-index: 11111;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #303030;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 25px;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    text-align: center;
+    user-select: none;
+    box-shadow: -10px -5px 10px #9e9e9e;
+    color: rgba(255, 255, 255);
+}
+.sidebar ul a{
+    list-style-type: none;
+    height: 100%;
+    width: 230px;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    padding-left: 15px;
+    transition: .4s;
+}
+.sidebar ul{
+    font-family: 'Comfortaa', cursive;
+    line-height: 3;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    top: 2.5vh;
+    left: 20px;
+    color: white;
+    font-size: 4vh;
+    transition: all .5s;
+}
+label #cancel{
+    position: fixed;
+    z-index: 20;
+    left: -195px;
+    top: 2.5vh;
+    font-size: 4vh;
+    color: #969696;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+    box-shadow: 2px -3px 6px #363636;
+    z-index: 10;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 20px;
+}
+#check:checked ~ main{
+    position: fixed; 
+}
+#check:checked ~footer.footer{
+    display: none;
+}
+/* ---------X---------- Sidebar ---------X---------- */
+
+main, footer{
+    transition: .5s ease-in-out;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+nav.nav{
+    background-color: #414141;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 9vh;
+    overflow: hidden;
+    transition: height .5s ease-in-out;
+}
+nav.nav h1{
+    line-height: 9vh;
+    text-align: center;
+}
+nav.nav h1 a{
+    color: white;
+    font-size: 6vh;
+    font-family: var(--name);
+    user-select: none;
+}
+nav.nav h1 a span{
+    color:rgb(0, 247, 255);
+}
+nav.nav h1 a:hover{
+    color: rgb(0,247,255);
+}
+
+
+.container{
+    background: #555555;
+}
+.course-list{
+    list-style-type: none;
+    display: flex;
+    padding-left: 30px;
+}
+.course-list .course-item{
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    padding: 2px 30px;
+}
+.course-list .course-item a{
+    user-select: none;
+    color: white;
+}
+.course-list .course-item:hover{
+    cursor: pointer;
+    background: black;
+}
+.selected{
+    background-color: rgb(31, 31, 31);
+}
+/* ---------X---------- Navigation Bar ----------X--------- */
+
+/* -------------------- Title of Webpage -------------------- */
+main h1.title{
+    font-family: var(--Josefin);
+    font-size: 50px;
+    padding: 40px 40px 10px 40px;
+    user-select: none;
+}
+/* -----------X-------- Title of Webpage ----------X--------- */
+
+/* -------------------- Introduction -------------------- */
+main .introduction-section{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0px 40px;
+    font-family: var(--Livvic);
+}
+main .introduction-section h3{
+    font-size: 2rem;
+    font-family: var(--Abel);
+    padding: 10px 0px;
+}
+main .introduction-section ul, ol{
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    font-family: var(--Livvic);
+}
+/* ---------X---------- Introduction ----------X--------- */
+
+/* -------------------- First section -------------------- */
+main .first-section{
+    font-family: var(--Livvic);
+    width: 90%;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+main .first-section a{
+    color: black;
+    font-size: 20px;
+    text-decoration: underline black;
+    font-style: italic;
+}
+/* ----------X--------- First section ----------X--------- */
+
+/* -------------------- Second section -------------------- */
+main .second-section{
+    font-family: var(--Livvic);
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+main .second .second-section{
+    padding: 10px 30px;
+    line-height: 1.8;
+}
+main .second .second-section h3{
+    font-family: var(--Abel);
+    font-size: 2rem;
+}
+main .second .second-section p{
+    font-size: 1.5rem;
+    padding: 3px 10px;
+    padding-right: 30px;
+}
+
+.example{
+    background: rgb(238, 238, 238);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px rgb(201, 201, 201), -6px -6px 10px rgb(255, 255, 255);
+}
+.example p{
+    font-family: var(--Livvic);
+    background: rgb(238, 238, 238);
+    border-radius: 5px;
+    border-left: 8px solid rgb(0, 4, 119); 
+    margin: 0px 20px;
+    box-shadow: inset 4px 4px 8px rgb(201, 201, 201), inset -4px -4px 8px rgb(255, 255, 255);
+}
+/* ----------X--------- Second section ---------X---------- */
+
+/* -------------------- Previous-Next buttons -------------------- */
+main hr{
+    margin: 1.5rem;
+}
+.prev-next{
+    column-count: 2;
+}
+.prev-next p{
+    display: flex;
+    justify-content: center;
+}
+.prev-next p a{
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    user-select: none;
+    font-family: 'Comfortaa', cursive;
+    border: 2px solid black;
+    padding: 10px 15px;
+    background-color: black;
+    border-radius: 5px;
+}
+.prev-next a:hover{
+    color: black;
+    background: rgb(211, 211, 211);
+    transition: ease-in-out .2s;
+}
+/* --------X----------- Previous-Next buttons ----------X--------- */
+
+/* ---------------------Footer------------------------- */
+footer.footer{
+    margin-top: 1.5rem;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+footer.footer .rights{
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+footer.footer .rights a{
+    font-size: 1rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 50;
+    color: rgb(250, 238, 128);
+    user-select: none;
+}
+footer.footer .rights a span{
+    text-decoration: underline;
+    font-size: 1rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 50;
+    color: rgb(250, 238, 128);
+    user-select: none;
+}
+
+footer.footer .move-up a{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    color: rgb(170, 170, 170);
+}
+footer.footer .move-up:hover a{
+    color: white;
+    cursor: pointer;
+}
+/* -----------X---------Footer-------------X----------- */
+
+
+
+
+
+
+
+
+
+/* -------------------- Mobile Devices==480px==1080px -------------------- */
+@media only screen and (max-width: 480px) , (max-width: 1080px) and (orientation: landscape){
+    .laptop-hide{
+        display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+
+    .img img{
+        margin: 1rem 0rem !important;
+    }
+    .img{
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    main{
+        width: 100% !important;
+        padding: 0 !important; 
+    }
+
+    main h4{
+        display: block;
+    }
+
+    main h1.title{
+        font-size: 40px !important;
+        padding: 20px 10px !important;
+    }
+
+    hr{
+        margin: 1rem 0rem !important;
+    }
+    
+    .note, .note-two, .defination{
+        margin: .5rem .5rem !important;
+        padding: 5px 3px !important;
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    .note{
+        margin-right: .5rem !important;
+    }
+    .note-extra{
+        margin: 1rem 0rem !important;
+        padding: 3px !important;
+    }
+
+    #check:checked ~ .sidebar{
+        transition-duration: .5s;
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    .sidebar header{
+        opacity: 0;
+    }
+    #check:checked ~ label #cancel{
+        color: #ffffff;
+    }
+    #check:checked ~ .sidebar ul li a{
+        padding: 5px 35px !important;
+    }
+    #check:checked ~ .sidebar ul{
+        padding-top: 15px !important;
+    }
+    #check:checked ~ main{
+        margin-left: 0px !important;
+    }
+
+    .container .course-list{
+        padding-left: 0px !important;
+        column-count: 2;
+    }
+
+    main > .introduction-section,
+    .introduction-section ul,
+    .introduction-section ol, 
+    .first-section, 
+    .first-section a, 
+    .second-section,
+    .second-section p{
+        font-size: 1.2rem !important;
+        padding: 0px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+    main > ul, ol, li{
+        margin-left: 25px !important;
+        margin-right: 5px !important;
+    }
+    p, h3, h5{
+        margin-left: 10px !important;
+        margin-right: 5px !important;
+    }
+
+    .prev-next p a span{
+        display: none;
+    }
+    
+    .footer .move-up a{
+        top: 5% !important;
+        right: 1% !important;
+        transform: translateY(0%) !important;
+        font-size: small;
+    }
+}
+/* ---------X---------- Mobile Devices==480px==1080px ----------X--------- */
+
+/* -------------------- Mobile Devices==LANDSCAPE==720px -------------------- */
+@media only screen and (max-width: 1080px) and (orientation: landscape){
+    .footer .move-up a{
+        top: 50% !important;
+        right: 3% !important;
+        transform: translateY(-50%) !important;
+        font-size: medium !important;
+    }
+}
+/* ---------X---------- Mobile Devices==LANDSCAPE==720px ----------X--------- */

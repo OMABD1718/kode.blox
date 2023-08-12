@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Styling |Kode.Blox</title>
+    <link rel="shortcut icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Comments, Paragraph, Headings, Background image, background color, 
+    text color, align text">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+
+
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">HTML : Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
+            <li><a href="./4font-styling.html">Font Styling</a></li>
+            <li><a href="#">Topic 5</a></li>
+            <li><a href="#">Topic 6</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+    
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Font Style Tags in HTML</b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <p>
+                <ul>
+                    <li>
+                        <b>Font style</b> refers to the size, color and style of characters typed in a document, email or <b>web page</b>.
+                    </li>
+                    <li>In other words, font styling lets you beautify the font as you wish.</li>
+                </ul>
+            </p>
+        </div>
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>
+                    <span class="bracket">&lt;</span><span class="tag">font</span><span class="bracket">&gt;</span> 
+                    tag and its attributes.
+                </h3>
+                <p>The <span class="bracket">&lt;</span><span class="tag">font</span><span class="bracket">&gt;</span>
+                tag allows us to set the font family, size and color of a small segment of text.</p>
+                <p>This small segment of text is typed between the opening and closing font tags.</p>
+                <p>
+                <span class="bracket">&lt;</span><span class="tag">font</span><span class="bracket">&gt;</span>
+                The text you want to beautify...
+                <span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span>
+                </p>
+                <br>
+
+                <h5>Font Face</h5>
+                <p>The Font Face element is used to change the typeface or name of the font</p>
+                <p>For Example: 
+                    <span class="bracket">&lt;</span><span class="tag">font</span>
+                    <span class="attribute">face</span> =<span class="value">"Copperplate Gothic"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+                <br>
+
+                <h5>Font Size</h5>
+                <p>It is used to change the size of the font to be displayed.</p>
+                <p>Font sizes can be specified by using the numbers 1 to 7. The smallest font size is 1 and the largest is 7.</p>
+                <p>For Example: 
+                    <span class="bracket">&lt;</span><span class="tag">font</span>
+                    <span class="attribute">size</span> =<span class="value">"4"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+                <br>
+
+                <h5>Font Color</h5>
+                <p>The color attribute changes the color of the text.</p>
+                <p>The color can be set by specifying the name of the color or by giving the hexadecimal code of the respective color</p>
+                <p>For Example: 
+                    <span class="bracket">&lt;</span><span class="tag">font</span>
+                    <span class="attribute">color</span> =<span class="value">"#ff0000"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+                <br>
+                <div class="font-styling-table">
+                    <table>
+                        <tr>
+                            <th>Color Name</th>
+                            <th>Hexadecimal Code</th>
+                        </tr>
+                        <tr><td>Cyan</td><td>#00ffff</td></tr>
+                        <tr><td>Teal</td><td>#008080</td></tr>
+                        <tr><td>Blue</td><td>#0000ff</td></tr>
+                        <tr><td>Navy</td><td>#000080</td></tr>
+                        <tr><td>Dark&nbsp;Blue</td><td>#0000a0</td></tr>
+                        <tr><td>Light&nbsp;Blue</td><td>#add8e6</td></tr>
+                        <tr><td>Purple</td><td>#800080</td></tr>
+                        <tr><td>Magenta</td><td>#ff00ff</td></tr>
+                        <tr><td>Red</td><td>#ff0000</td></tr>
+                        <tr><td>Maroon</td><td>#800000</td></tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Color Name</th>
+                            <th>Hexadecimal Code</th>
+                        </tr>
+                        <tr><td>White</td><td>#ffffff</td></tr>
+                        <tr><td>Silver</td><td>#c0c0c0</td></tr>
+                        <tr><td>Gray</td><td>#808080</td></tr>
+                        <tr><td>Black</td><td>#000000</td></tr>
+                        <tr><td>Olive</td><td>#808000</td></tr>
+                        <tr><td>Green</td><td>#008000</td></tr>
+                        <tr><td>Lime</td><td>#00ff00</td></tr>
+                        <tr><td>Yellow</td><td>#ffff00</td></tr>
+                        <tr><td>Orange</td><td>#ffa500</td></tr>
+                        <tr><td>Brown</td><td>#a52a2a</td></tr>                        
+                    </table>
+                </div>
+
+                <hr class="mobile-hide tablet-hide">
+
+                <div class="mobile-hide tablet-hide">
+                    <h5 style="padding-left: 40px; font-size: 20px;">For Example:</h5>
+                    <center><img src="font-img1.png" alt="Font Tag and its attributes"></center>
+                </div>
+
+            </div>
+            <hr>
+            
+            <div class="first-section">
+                <h3>Font Style Tags</h3>
+                <p>Font Style tags let you display underlined, bold, italicized and many other styles.</p><br>
+
+                <h5>Bold</h5>
+                <p>The bold tag (<span class="bracket">&lt;</span><span class="tag">b</span><span class="bracket">&gt;</span>) is used when you
+                    want to display some <b>Bold text</b>.
+                </p>
+                <p><span class="eg">Example</span> : 
+                    <span class="bracket">&lt;</span><span class="tag">b</span><span class="bracket">&gt;</span>Bold Text
+                    <span class="bracket">&lt;</span><span class="tag">/b</span><span class="bracket">&gt;</span>
+                </p><br>
+
+                <h5>Italic</h5>
+                <p>The italic tag (<span class="bracket">&lt;</span><span class="tag">i</span><span class="bracket">&gt;</span>) is used when you
+                    want to display text in <i>Italic Style</i>.
+                </p>
+                <p><span class="eg">Example</span> : 
+                    <span class="bracket">&lt;</span><span class="tag">i</span><span class="bracket">&gt;</span>Italicized Text
+                    <span class="bracket">&lt;</span><span class="tag">/i</span><span class="bracket">&gt;</span>
+                </p><br>
+
+                <h5>Underline</h5>
+                <p>The Underline tag (<span class="bracket">&lt;</span><span class="tag">u</span><span class="bracket">&gt;</span>) is used when you
+                    want to <span style="text-decoration: underline;">underline text</span> in your document.
+                </p>
+                <p><span class="eg">Example</span> : 
+                    <span class="bracket">&lt;</span><span class="tag">u</span><span class="bracket">&gt;</span>Underlined Text
+                    <span class="bracket">&lt;</span><span class="tag">/u</span><span class="bracket">&gt;</span>
+                </p><br>
+
+                <h5>Typewriter</h5>
+                <p>The typewriter tag (<span class="bracket">&lt;</span><span class="tag">tt</span><span class="bracket">&gt;</span>) is used when you
+                    want to display the text in <tt>Typewriter Font</tt>.
+                </p>
+                <p><span class="eg">Example</span> : 
+                    <span class="bracket">&lt;</span><span class="tag">tt</span><span class="bracket">&gt;</span>Typewiter Text
+                    <span class="bracket">&lt;</span><span class="tag">/tt</span><span class="bracket">&gt;</span>
+                </p><br>
+
+                <h5>Strike</h5>
+                <p>The Strike Tag (<span class="bracket">&lt;</span><span class="tag">strike</span><span class="bracket">&gt;</span>
+                    or <span class="bracket">&lt;</span><span class="tag">s</span><span class="bracket">&gt;</span>) 
+                    draws a line <span style="text-decoration: line-through;">through the middle</span> of the text.
+                </p>
+                <p><span class="eg">Example</span> : 
+                    <span class="bracket">&lt;</span><span class="tag">strike</span><span class="bracket">&gt;</span>Strike Tag
+                    <span class="bracket">&lt;</span><span class="tag">/strike</span><span class="bracket">&gt;</span>
+                </p>
+                <p class="note">The Strike tag is not supported in HTML5.</p>
+                <br><br>
+
+                <h5>Subscript</h5>
+                <p>The Subscript tag (<span class="bracket">&lt;</span><span class="tag">sub</span><span class="bracket">&gt;</span>) is used when you
+                    want the text to be displayed at the base line. It is usually used to write Chemical Formulas like
+                    CH<sub>3</sub>CH<sub>2</sub>OH.
+                </p>
+                <p><span class="eg">Example</span> : CO 
+                    <span class="bracket">&lt;</span><span class="tag">sub</span><span class="bracket">&gt;</span>2
+                    <span class="bracket">&lt;</span><span class="tag">/sub</span><span class="bracket">&gt;</span>
+                </p><br>
+
+                <h5>Superscript</h5>
+                <p>The Superscript tag (<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>) is used when you
+                    want the text to be displayed at the top line. It is usually used to write Mathematical Equations like
+                    a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+                </p>
+                <p><span class="eg">Example</span> : (A + B)
+                    <span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>2
+                    <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span> =
+                    A<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>2
+                    <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span> +
+                    B<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>2
+                    <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span> + 2AB
+                </p><br>
+
+                <h5>Preformatted</h5>
+                <p>Web browsers consider only a single space between words, even if you give more than one space in the HTML document.</p>
+                <p>The Preformatted tag (<span class="bracket">&lt;</span><span class="tag">pre</span><span class="bracket">&gt;</span>) is used
+                    when you want to retain the spacing between the texts as you had given in your HTML document. It is usually used to type poems.
+                </p>
+                <p><span class="eg">Example</span> : <br>
+                    <img src="basic-tag-img9.jpg" alt="Preformatted Tag">
+                </p>
+
+            </div>
+            <!------X----- First Section -----X------>
+            <hr>
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>BaseFont</h3>
+                <p>The <span class="bracket">&lt;</span><span class="tag">basefont</span><span class="bracket">&gt;</span>
+                    tag has attributes similar to the <span class="bracket">&lt;</span><span class="tag">font</span><span class="bracket">&gt;</span>
+                    tag, that is Font Face, Font Size and Color.
+                </p>
+                <p>The <span class="bracket">&lt;</span><span class="tag">basefont</span><span class="bracket">&gt;</span>
+                    tag is used to set font attributes for the entire HTML document. <br>
+                    For Example: 
+                    <span class="bracket">&lt;</span><span class="tag">basefont</span>
+                    <span class="attribute">face</span> =<span class="value">"Forte" </span>
+                    <span class="attribute">size</span> =<span class="value">"4"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+                <p>
+                    If you want to change the font size of a particular element, 
+                    you can do so by adding or subtracting a value from the base font size initially set. <br>
+                    <span class="bracket">&lt;</span>font size= +2<span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span>font size= -1<span class="bracket">&gt;</span><br>
+                    <br>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">basefont</span>
+                    <span class="attribute">size</span> =<span class="value">"4"</span>
+                    <span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>The font size will be set to 4(i.e the BaseFont Size).
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span>font size= +2<span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>The font size for this paragraph will be set to 6(i.e the BaseFont +2).
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span>font size= -1<span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>The font size for this paragraph will be set to 3(i.e the BaseFont -1).
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                </p>
+                <p class="note-two">
+                    The <span class="bracket">&lt;</span><span class="tag">basefont</span><span class="bracket">&gt;</span> tag
+                    does not affect the heading tags in an HTML document.
+                </p>
+                <p class="note">The BaseFont tag is not supported in HTML5</p>
+            </div>
+            <!------X----- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+            
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+
+                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                    <h5 style="padding: 10px;">For Example:</h5>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">basefont</span>
+                        <span class="attribute"> size</span> =<span class="value">"3"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">center</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">h1</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">i</span><span class="bracket">&gt;</span>Welcome to Kode.Blox!
+                        <span class="bracket">&lt;</span><span class="tag">/i</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/h1</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/center</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">hr</span>
+                        <span class="attribute"> size</span> =<span class="value">"3"</span>
+                        <span class="attribute"> width</span> =<span class="value">"94%"</span>
+                        <span class="attribute"> color</span> =<span class="value">"red"</span>
+                        <span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">font</span>
+                        <span class="attribute">size</span> = +3
+                        <span class="attribute">color</span> =<span class="value">"#0000ff"</span>
+                        <span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">u</span><span class="bracket">&gt;</span>Question: 
+                        <span class="bracket">&lt;</span><span class="tag">/u</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">font</span>
+                        <span class="attribute">size</span> = +2
+                        <span class="bracket">&gt;</span><br>
+                         Speed of light in air is 3&nbsp;x&nbsp;10<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>8
+                        <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span>&nbsp;m/s 
+                        and Speed of light in glass is 2&nbsp;x&nbsp;10<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>8
+                        <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span>&nbsp;m/s. 
+                        Calculate the refractive index of glass. <br>
+                        <span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">hr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">font</span>
+                        <span class="attribute">size</span> = +3
+                        <span class="attribute">color</span> =<span class="value">"#0000ff"</span>
+                        <span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">u</span><span class="bracket">&gt;</span>Answer:
+                        <span class="bracket">&lt;</span><span class="tag">/u</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">font</span>
+                        <span class="attribute">size</span> = <span class="value">"5"</span>
+                        <span class="bracket">&gt;</span><br>
+                        Glass refractive index is defined as the ratio between the speed of light in the vacuum and the speed of light in the glass.
+                        <span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span><br>
+                        Refractive index of glass (
+                        n<span class="bracket">&lt;</span><span class="tag">sub</span><span class="bracket">&gt;</span>g
+                        <span class="bracket">&lt;</span><span class="tag">/sub</span><span class="bracket">&gt;</span>)
+                         = Speed of light in vacuum / speed of light in the glass. 
+                        <span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span><br>
+                        n<span class="bracket">&lt;</span><span class="tag">sub</span><span class="bracket">&gt;</span>g
+                        <span class="bracket">&lt;</span><span class="tag">/sub</span><span class="bracket">&gt;</span> = 
+                        3&nbsp;x&nbsp;10<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>8
+                        <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span> / 
+                        2&nbsp;x&nbsp;10<span class="bracket">&lt;</span><span class="tag">sup</span><span class="bracket">&gt;</span>8
+                        <span class="bracket">&lt;</span><span class="tag">/sup</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span><br>
+                        n<span class="bracket">&lt;</span><span class="tag">sub</span><span class="bracket">&gt;</span>g
+                        <span class="bracket">&lt;</span><span class="tag">/sub</span><span class="bracket">&gt;</span> = 1.5 <br>
+                        <span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./3basic-tags.html" title="Basic HTML Tags"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./5lists.html" title="List Tags in HTML"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span>Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags in HTML | Kode.Blox</title>
+    <link rel="shortcut icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Container Tags, Empty tags">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="#">Topic 3</a></li>
+            <li><a href="#">Topic 4</a></li>
+            <li><a href="#">Topic 5</a></li>
+            <li><a href="#">Topic 6</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+    <!---------------------- Navigation Bar --------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X---------- Navigation Bar ----------X---------->
+
+    
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Tags in HTML</b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+        
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <ul>
+                <li>
+                    HTML is a <b>Tag based language</b> which lets you create web pages.
+                </li>
+                <li>
+                    HTML provides a number of formatting options to display text, hyperlinks, graphics, etc., 
+                    with the help of tags.
+                </li>
+                <li>
+                    In HTML, tags are also known as <b>HTML elements</b>.
+                </li>
+                <li>
+                    A tag comprises of commands enclosed in angle brackets < >.&nbsp; If you fail to use angle brackets,
+                    the web browser will assume the command as text.
+                </li>
+                <li>
+                    Each tag follows specific rules and syntax, with its own attributes and defaults.
+                </li>
+                <li>
+                    HTML tags are <b>NOT Case-Sensitive</b>.
+                    Therefore, &lt;tagname&gt; and &lt;TAGNAME&gt; will have the same effect.
+                </li>
+            </ul>
+            <span class="note-two">Kode.Blox will always use lowercase tagnames.</span>
+            <ul>   
+                <li>
+                    The HTML elements can be categorised as:
+                    <ul>
+                        <li>Container Tags</li>
+                        <li>Empty Tags</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Container Element</h3>
+                <p>In HTML, tags which include Opening and Closing tags are referred to as Container Elements.</p>
+                <p>A tag is opened using opening brackets &lt; &gt;. For Example: 
+                <span class="bracket">&lt;</span><span class="tag">tagname</span><span class="bracket">&gt;</span>.<br>
+                A tag is closed using closing brackets &lt;/&gt;. The closing tag has a forward slash "<b>/</b>".
+                For Example:
+                <span class="bracket">&lt;</span><span class="tag">/tagname</span><span class="bracket">&gt;</span>. 
+                </p>
+                <p>Container elements include 
+                    <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">head</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">body</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">h1</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">/h6</span><span class="bracket">&gt;</span>,
+                    <span class="bracket"> &lt;</span><span class="tag">ul</span><span class="bracket">&gt;</span>,
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span>, 
+                    <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>
+                    and many more tags.
+                </p>
+                <p style="font-style: italic; color: rgb(70, 70, 70);">
+                    Don't worry if we use tags you haven't heard of yet. You will learn about them in the following lessons.
+                </p><br>
+                <h5>While using container tags, make sure to keep the containers nested.</h5>
+                <p>HTML elements can be nested. This means thay can be embedded within each other.</p>
+                <div class="right-wrong">
+                    <div style="padding: 1rem;">
+                        <h5>Ideal Method</h5>
+                        <p>
+                            <li>&lt;tag1&gt;</li>
+                            <li>&lt;tag2&gt;</li>
+                            <li>&lt;/tag2&gt;</li>
+                            <li>&lt;/tag1&gt;</li>
+                        </p>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <h5>Unideal Method</h5>
+                        <p>
+                            <li>&lt;tag1&gt;</li>
+                            <li>&lt;tag2&gt;</li>
+                            <li style="color: red;">&lt;/tag1&gt;</li>
+                            <li style="color: red;">&lt;/tag2&gt; </li>     
+                        </p>
+                    </div>
+                </div><br>
+                <h5>Make sure you never skip the closing tag of a Container element!</h5>
+                <p class="note">Unintended results and errors can occur if you forget the closing tag.</p>
+                <p>Sometimes, HTML elements may display correctly even if you neglect the closing tag.</p>
+                <div class="img"><img src="./tag-img1.png" alt="No end tag" class="tablet-hide"></div>
+                <p><b>Still, never count on it!</b> And make sure you close the container elements after the nested elements.</p>
+            </div>
+            <!------X----- First Section -----X------>
+            <hr>
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Empty Element</h3>
+                <p>The Empty Elements are the ones with only Opening tags. They have no Closing tags.</p>
+                <p>These elements do not contain any data. Instead, they format the data given within the container elements.</p>
+                <p>As Empty Elements contain only Opening tags, they cannot have any nested elements.</p>
+                <p>Empty Elements include tags like 
+                    <span class="bracket">&lt;</span><span class="tag">hr</span><span class="bracket">&gt;</span>,
+                    <span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span>,
+                    <span class="bracket">&lt;</span><span class="tag">meta</span><span class="bracket">&gt;</span>,
+                    <span class="bracket">&lt;</span><span class="tag">img</span><span class="bracket">&gt;</span>,
+                    <span class="bracket">&lt;</span><span class="tag">link</span><span class="bracket">&gt;</span>,
+                    etc.
+                </p>
+            </div>
+            <!------X----- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+            
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+                    <div class="example mobile-hide tablet-hide">
+                    <div style="display: grid; grid-template-columns: 50% 50%;">
+                        <h5>For Example:</h5>
+                        <span style="text-align: right; font-family: var(--Livvic); font-size: 1.5rem; margin-right: 2rem;">
+                            <span style="color: blue;">Container Tags</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: red;">Empty Tags</span>
+                        </span>
+                    </div>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">h1</span><span class="bracket">&gt;</span>
+                        Welcome to Kode.Blox!
+                        <span class="bracket">&lt;</span><span class="tag">/h1</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span style="color: red;">hr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span><br>
+                        Kode.Blox is an ideal platform for School Students, 
+                        <span class="bracket">&lt;</span><span style="color: red;">br</span><span class="bracket">&gt;</span>
+                        , Front-end Developers, and all those
+                        who are interested in learning HTML and CSS
+                        <span class="bracket">&lt;</span><span style="color: red;">br</span><span class="bracket">&gt;</span>
+                        from scratch and wish to design websites. <br>
+                        <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">span</span><span class="bracket">&gt;</span><br>
+                        Kode.Blox is a beginner's resource available to everyone at the best possible price. <br>
+                        <span class="bracket">&lt;</span><span class="tag">/span</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span style="color: red;">hr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p></div>
+                    <p class="mobile-hide tablet-hide" style="color: rgb(87, 87, 87);">
+                    *If you wish to find out how this code will work, you can copy-paste this 
+                    code into your text editor, save it and open it with any web browser.
+                    </p> <br class="mobile-hide tablet-hide">
+                    <h5 class="mobile-hide tablet-hide">Explanation:</h5>
+                    <p class="mobile-hide tablet-hide">
+                        <kbd><span class="bracket">&lt;</span><span class="tag">hr</span><span class="bracket">&gt;</span></kbd>
+                        stands for horizontal rule. This is used to insert a horizontal rule or thematic break 
+                        into an HTML page to split the page. <br>
+                        <kbd><span class="bracket">&lt;</span><span class="tag">br</span><span class="bracket">&gt;</span></kbd>
+                        tag is used for line break. This tag breaks a line and shows the remaining text from the next line. <br>
+                        <kbd><span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span></kbd>
+                        tag marks a block of text as a paragraph. <br>
+                    </p>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./1introduction.html" title="Introduction to HTML|Kode.Blox"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./3basic-tags.html" title="Basic HTML Tags"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

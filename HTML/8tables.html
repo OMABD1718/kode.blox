@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Tables | Kode.Blox</title>
+    <link rel="icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Comments, Paragraph, Headings, Background image, background color, 
+    text color, align text">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+
+    
+</head>
+
+
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">HTML : Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
+            <li><a href="./4font-styling.html">Font Styling</a></li>
+            <li><a href="./5lists.html">Lists in HTML</a></li>
+            <li><a href="./6images.html">Images in HTML</a></li>
+            <li><a href="./7a-tag.html">Linking in HTML</a></li>
+            <li><a href="./8tables.html">Tables in HTML</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Creating Tables <span class="mobile-hide">in HTML</span></b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <p>Tables are a commonly used way to present data because: <br>
+            <ul>
+                <li>Tables present information in a comprehensive manner.</li>
+                <li>Tables are used to organize data that is too complicated to be described adequately with simple text, 
+                    allowing the reader to instantly see the outcomes.</li>
+            </ul></p><br>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>To create a table in HTML the Table Tag(<span class="bracket">&lt;</span><span class="tag">table</span><span class="bracket">&gt;</span>)is used.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>The Caption tag(<span class="bracket">&lt;</span><span class="tag">caption</span><span class="bracket">&gt;</span>) specifies the title of the table.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>The table contains rows which begin with the Table Row tag(<span class="bracket">&lt;</span><span class="tag">tr</span><span class="bracket">&gt;</span>).</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>Table Row tags contain Table Heading tags and Table Data tags.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>The Table Heading tag(<span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>) specifies the heading of the column.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>By default, the text within the <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span> tag is bold.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>The Table Data tag(<span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>) specifies the data in the cell.</p>
+            <p><i class="fas fa-chevron-right mobile-hide" style="font-size: 15px;">&nbsp;&nbsp;</i>The Table Data tag(<span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>) specifies the data in the cell.</p>
+        </div>
+        
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3 style="margin-bottom: 1rem;">Attributes of the Table Tag</h3>
+                <table style="font-family: var(--Livvic); padding: 1rem 0rem;" class="mobile-hide tablet-hide">
+                    <tr><td style="text-align: center;"><span class="attribute">border</span></td><td>Specifies the width of the border of the table in pixels. 
+                        If the value is not specified or given to be 0, the table will not be bordered.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span>
+                            = <span class="value">"3"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">bordercolor</span></td><td>Specifies the color of the border of the table. The default color is gray, 
+                        but you can change it by assigning a different color name.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">bordercolor</span>=<span class="value">"#0000FF"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">bgcolor</span></td><td>Specifies the background color of the table. The default color is gray, 
+                        but you can change it by assigning a different color name.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">bgcolor</span> = <span class="value">"#add8e6"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">align</span></td><td>Used to set the alignment of the table. The default alignment is left. 
+                        The alignment can be set to center, right or left.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">align</span>&nbsp;= <span class="value">"center"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">cellpadding</span></td><td>Used to set the distance between the cell boundary and the contents of the cell.
+                        The default value is 2.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">cellpadding</span>=<span class="value">"4"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">cellspacing</span></td><td>Used to set the distance between the cell boundaries of two adjacent cells.
+                        Its default value is 2.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">cellspacing</span>=<span class="value">"6"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">height</span></td><td>The height attribute sets the total height of the table.
+                        Values can be specified in pixels or by giving relative percentage of the screen size.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">height</span>=<span class="value">"120%"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">width</span></td><td>The width attribute sets the width of the table.
+                        You can specify the width either in pixels or by giving relative percentage of the screen size.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">border</span> = <span class="value">"3"</span>
+                            <span class="attribute">height</span>=<span class="value">"400"</span>
+                            <span class="attribute">width</span>=<span class="value">"50%"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                </table>
+
+                <div class="laptop-hide">
+                    <p><span class="attribute">border</span> - Specifies the width of the border of the table in pixels. 
+                    If the value is not specified or given to be 0, the table will not be bordered.</p>
+                    <p><span class="attribute">bordercolor</span> - Specifies the color of the border of the table. The default color is gray, 
+                    but you can change it by assigning a different color name.</p>
+                    <p><span class="attribute">bgcolor</span> - Specifies the background color of the table. The default color is gray, 
+                        but you can change it by assigning a different color name.</p>
+                    <p><span class="attribute">align</span> - Used to set the alignment of the table. The default alignment is left. 
+                        The alignment can be set to center, right or left.</p>
+                    <p><span class="attribute">cellpadding</span> - Used to set the distance between the cell boundary and the contents of the cell.
+                        The default value is 2.</p>
+                    <p><span class="attribute">cellspacing</span> - Used to set the distance between the cell boundaries of two adjacent cells.
+                        Its default value is 2.</p>
+                    <p><span class="attribute">height</span> - The height attribute sets the total height of the table.
+                        Values can be specified in pixels or by giving relative percentage of the screen size.</p>
+                    <p><span class="attribute">width</span> - The width attribute sets the width of the table.
+                        You can specify the width either in pixels or by giving relative percentage of the screen size.</p>
+                </div>
+
+                <br>
+            </div> 
+
+            <hr>
+            
+            <div class="first-section">
+                <h3 style="margin-bottom: 1rem;">Attributes of the 
+                <span class="bracket">&lt;</span><span class="tag">tr</span><span class="bracket">&gt;</span>,
+                <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span> and 
+                <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>
+                Tags</h3>
+
+                <table style="font-family: var(--Livvic);" class="mobile-hide tablet-hide">
+                    <tr style="height: 5rem;"><td style="text-align: center;"><span class="attribute">bordercolor</span></td><td>You can set the color of the border of any specific cell of the table.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">tr</span>&nbsp;<span class="attribute">bordercolor</span>=<span class="value">"red"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr style="height: 5rem;"><td style="text-align: center;"><span class="attribute">bgcolor</span></td><td>You can set the background color of any specific cell of the table.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">th</span>&nbsp;<span class="attribute">bgcolor</span>=<span class="value">"yellow"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">align</span></td><td>Lets you set the alignment of text within cells. The default alignment is left. 
+                        The alignment can be set to center, right or left.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">bgcolor</span> = <span class="value">"yellow"</span>
+                            <span class="attribute">align</span>&nbsp;= <span class="value">"center"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">valign</span></td><td>This attribute is used to set the vertical alignment of text within cells.
+                        The default vertical alignment is center. The vertical alignment can be set to middle, top or bottom.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">align</span>=<span class="value">"center"</span>
+                            <span class="attribute">bordercolor</span>=<span class="value">"red"</span> <span class="attribute">valign</span>=<span class="value">"bottom"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">colspan</span></td>
+                        <td>The COLSPAN attribute combines two or more horizontally-placed cells. It specifies the number of cells to be combined.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">th</span> <span class="attribute">bordercolor</span>=<span class="value">"red"</span>
+                        <span class="attribute">colspan</span>=<span class="value">"5"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                    <tr><td style="text-align: center;"><span class="attribute">rowspan</span></td>
+                        <td>The ROWSPAN attribute combines two or more vertically-placed cells. It specifies the number of cells to be combined.</td>
+                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">bgcolor</span>=<span class="value">"yellow"</span>
+                        <span class="attribute">rowspan</span>=<span class="value">"3"</span><span class="bracket">&gt;</span></td>
+                    </tr>
+                </table>
+
+                <div class="laptop-hide">
+                    <p><span class="attribute">bordercolor</span> - You can set the color of the border of any specific cell of the table.</p>
+                    <p><span class="attribute">bgcolor</span> - You can set the background color of any specific cell of the table.</p>
+                    <p><span class="attribute">align</span> - Lets you set the alignment of text within cells. The default alignment is left. 
+                        The alignment can be set to center, right or left.</p>
+                    <p><span class="attribute">valign</span> - This attribute is used to set the vertical alignment of text within cells.
+                        The default vertical alignment is center. The vertical alignment can be set to middle, top or bottom.</p>
+                    <p><span class="attribute">colspan</span> - The COLSPAN attribute combines two or more horizontally-placed cells. 
+                        It specifies the number of cells to be combined.</p>
+                    <p><span class="attribute">rowspan</span> - The ROWSPAN attribute combines two or more vertically-placed cells. 
+                        It specifies the number of cells to be combined.</p>
+                </div>
+            </div>            
+            <!------X----- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+
+            <!------------ Second Section ------------>
+            
+            <div class="second">
+                <div class="second-section">
+
+                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                    <h5 style="padding: 10px;">For Example:</h5>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">cellpadding</span>=<span class="value">"3"</span>
+                        <span class="attribute">border</span>=<span class="value">"2"</span> <span class="attribute">bordercolor</span>=<span class="value">"red"</span>
+                        <span class="attribute">height</span>=<span class="value">"100%"</span> <span class="attribute">width</span>=<span class="value">"100%"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">tr</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">th</span> <span class="attribute">colspan</span>=<span class="value">"4"</span>
+                        <span class="attribute">bordercolor</span>=<span class="value">"red"</span><span class="bracket">&gt;</span> 
+                        <span class="bracket">&lt;</span><span class="tag">font</span> <span class="attribute">size</span>=<span class="value">"5"</span>
+                        <span class="attribute">color</span>=<span class="value">"red"</span><span class="bracket">&gt;</span> 
+                        Workout Log<span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span> 
+                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">align</span>
+                        =<span class="value">"center"</span> <span class="attribute">bgcolor</span>=<span class="value">"#FFB8A6"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>NAME
+                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Chest Exercises
+                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Back Exercises
+                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Leg Exercises
+                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
+                        Nehmar<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Barbell bench press
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Lat pulldown
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Lunges
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Cable crossovers
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Wide dumbbell row
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Single-Leg Deadlift
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
+                        Ristiano<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Pushups
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Pullups
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Squats
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bar Dips
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bodyweight Rows
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bulgarian Split Squat
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
+                        Lashford<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Isometric Chest Squeeze
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Single-arm dumbbell row
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Seated Leg Press
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
+                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Seated Machine Chest Press
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Reverse-grip row
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Angled Leg Curl
+                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">/table</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./7a-tag.html"  title="Anchor Tag"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./9forms.html"  title="HTML Forms"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

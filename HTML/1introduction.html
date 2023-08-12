@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML | Kode.Blox</title>
+    <link rel="shortcut icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Introduction, Tags, Head Tag, Body Tag">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">Introduction</a></li>
+            <li><a href="#">Topic 2</a></li>
+            <li><a href="#">Topic 3</a></li>
+            <li><a href="#">Topic 4</a></li>
+            <li><a href="#">Topic 5</a></li>
+            <li><a href="#">Topic 6</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+    
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Introduction to HTML</b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <h3>What is HTML?</h3>
+            <ul>
+                <li>
+                    HTML stands for <b>H</b>yper<b>T</b>ext &nbsp;<b>M</b>ark-up &nbsp;<b>L</b>anguage
+                </li>
+                <li>
+                    HTML is a standard markup language which is widely used for displaying documents in web browsers.
+                </li>
+                <li>
+                    HTML is a tag based language that makes it possible to create web pages.
+                </li>
+                <li>
+                    With HTML, you can design the basic structure of a web page.
+                </li>
+                <li>
+                    An HTML document consists of a set of tags(also known as Elements) that instruct the web browser how to render 
+                    the given content.
+                </li>
+            </ul>
+        </div>
+        <!---------X------- Introduction Section --------X-------->
+
+        <div>
+            <!----------------------- Accordian---------------------->
+            <div class="accordian">
+                <div>
+                    <input type="checkbox" name="intro" id="section2" class="accordian-input">
+                    <label for="section2" class="accordian-label">How to create a new HTML document?</label>
+                    <div class="accordian-content">
+                        HTML documents can be created using any word processor.
+                        You can either use existing word processors like <b>Notepad</b> or WordPad can be used by Windows users and <b>TextEdit</b> 
+                        can be used by Mac users or download and use text editors like Visual Studio Code, Brackets, Atom or Sublime Text.
+                        <br>To save it as an HTML document, add the <b>.html</b> or <b>.htm</b> extension after the specified filename.
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="intro" id="section3" class="accordian-input">
+                    <label for="section3" class="accordian-label">How to view an existing HTML document?</label>
+                    <div class="accordian-content">
+                        Navigate to the file location of your HTML document. <br>
+                        Click '<b>Open with</b>'.<br>
+                        <ul>
+                            <li>To view this file, you may open it with any web browser available on your device (Google Chrome, Mozilla Firefox or Apple Safari).</li>
+                            <li>You can further edit the HTML file by opening it with text editors.</li>
+                        </ul>                    
+                    </div>
+                </div>
+            </div>
+            <!-----------X----------- Accordian-----------X---------->
+        </div>
+            
+
+        <!--------------------------- Main Content --------------------------->
+        <div>
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <p>HTML is a <b>Tag based language</b>.</p>
+                <p class="note-two">A tag is an element that tells the browser what it must show and how it can be shown.</p><br><br>
+                <p class="note">Each tag giving a specific instruction is enclosed in angle brackets < > . </p><br>
+                <img src="third-img.jpg" alt="Opening and closing tags." class="mobile-hide tablet-hide"><p></p>
+                <a href="./2tags.html" title="Tags in HTML">Click here to learn more about HTML Tags.</a><br>
+                <p>You can use the different attributes of tags that contain additional information, 
+                such as formatting effects, alignment and so forth. <br> 
+                The attributes appear inside the opening tag and their value remains within the quotes.
+                </p><br>
+                <img src="./first-image.jpg" alt="What is an Attribute and a Tag?" class="mobile-hide tablet-hide">
+            </div>
+            <!------X----- First Section -----X------>
+            <hr>
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Structure of an HTML document</h3>
+                <p>An HTML document starts with <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span> tag and ends with 
+                    <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span> tag. This makes it
+                    identifiable as a standard HTML document. <br>
+                    The overall framework of an HTML document is divided into two parts:
+                    <p>
+                        <b>Head</b> : The <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span> 
+                        tag indicates the header of the HTML document. It lies just below the 
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span>
+                         tag and contains details about the webpage.
+                    </p>
+                    <p>
+                        <b>Body</b> : <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span> 
+                        tag contains the text that appears on the web page with additional tags and attributes. In the body tag, we use 
+                        formatting elements, images, lists, tables, hyperlinks to enhance the appearance of a web page.
+                    </p>
+                    <span class="note-two">Note that only the content written within the body tags will appear on the web browser.</span>
+                </p>
+            </div>
+            <!------X----- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+                    <div class="image">
+                        <div class="image-code">
+                            &lt;HTML&gt;<br>
+                            &lt;HEAD&gt;<br>
+                            &lt;TITLE&gt;
+                            Title
+                            &lt;/TITLE&gt;<br>
+                            &lt;/HEAD&gt;<br>
+                            &lt;BODY&gt;<br>
+                            This space contains the text to be on your web page.<br>
+                            &lt;/BODY&gt;<br>
+                            &lt;/HTML&gt;
+                        </div> 
+                        <div class="extra-image"><center><img src="./second-image.jpg" alt="HTML, HEAD and BODY tags."></center></div>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="../home.html" title="Kode.Blox | Home"><i class="fas fa-home" id="prev"></i> <span>Home</span></a></p>
+            <p><a href="./2tags.html" title="Tags in HTML"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span>Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

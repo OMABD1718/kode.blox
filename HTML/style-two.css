@@ -1,0 +1,147 @@
+@import url('../CSS common/font.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+:root{
+    /* Theme font family */
+    --Abel: Abel;
+    --Josefin: Josefin;
+    --Livvic: Livvic;
+
+    --name: 'Roboto Slab', serif;
+}
+
+
+
+/* -------------------- Accordian -------------------- */ 
+.accordian{
+    max-width: 60%;
+    overflow: hidden;
+    padding: 10px 50px;
+}
+.accordian-label, .accordian-content{
+    padding: 20px 20px;
+}
+.accordian-label{
+    font-family: var(--Josefin);
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+    border-bottom: 1px solid gray;
+}
+.accordian-label:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+.accordian-label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:black;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+.accordian-content{
+    line-height: 1.6;
+    font-size: 1.3rem;
+    font-family: var(--Livvic);
+    display: none;
+}
+main .accordian .accordian-content ul{
+    padding-left: 20px;
+}
+main .accordian .accordian-content li{
+    list-style-type: square;
+}
+.accordian-input{
+    display: none;
+}
+
+.accordian-input:checked ~ .accordian-content{
+    display: block;
+    border-bottom: 1px solid gray;
+}
+.accordian-input:checked ~ .accordian-label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+/* --------X----------- Accordian ----------X--------- */
+
+
+/* -------------------- Image-Code -------------------- */
+.image{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+.image .image-code{
+    padding: 15px 5px;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+/* --------X----------- Image-Code ----------X--------- */
+
+/* -------------------- Tables -------------------- */
+.font-styling-table{
+    display: grid; 
+    grid-template-columns: 50% 50%;
+}
+.font-styling-table table{
+    margin:0px 10px;
+    text-align: center;
+}
+.font-styling-table table th, table td{
+    padding: 2px 15px;
+}
+table, th, td{
+    border: 3px solid blue;
+}
+table{
+    border-collapse: collapse;
+    background-color: rgb(240, 240, 240);
+}
+th{
+    background-color: #a1b2fd;
+}
+/* --------X----------- Tables ----------X--------- */
+
+
+
+
+
+
+
+/* -------------------- Mobile Devices==480px==1080px -------------------- */
+@media only screen and (max-width: 480px) , (max-width: 1080px) and (orientation: landscape){
+    .accordian{
+        max-width: 100% !important;
+        padding: 10px 5px !important;
+    }
+    .accordian-label{
+        padding: 10px 10px !important;
+        font-size: 1.2rem !important;
+    }
+    .accordian-content{
+        padding: 10px 5px;
+        font-size: 1.1rem;
+    }
+    .image{
+        grid-template-columns:100%;
+    }
+}
+/* -----------X-------- Mobile Devices==480px==1080px ----------X--------- */
+
+
+/* -------------------- Mobile Devices==LANDSCAPE==720px -------------------- */
+@media only screen and (max-width: 1080px) and (orientation: landscape){
+    .accordian{
+        max-width: 90% !important;
+    }
+}
+/* ---------X---------- Mobile Devices==LANDSCAPE==720px ----------X--------- */

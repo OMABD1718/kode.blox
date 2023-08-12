@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Images | Kode.Blox</title>
+    <link rel="shortcut icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Comments, Paragraph, Headings, Background image, background color, 
+    text color, align text">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+
+
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">HTML : Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
+            <li><a href="./4font-styling.html">Font Styling</a></li>
+            <li><a href="./5lists.html">Lists in HTML</a></li>
+            <li><a href="./6images.html">Images in HTML</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Inserting Images <span class="mobile-hide">in an HTML document</span></b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <p>Images are an effective way to make your web page more appealing.</p><br>
+            <p>To insert an image to your web page, the <span class="bracket">&lt;</span><span class="tag">img</span><span class="bracket">&gt;</span>
+            tag is used.</p>
+            <p>For Example: <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                =<span class="value">"kodeblox_image.png"</span><span class="bracket">&gt;</span></p>
+            <p>The <span class="attribute">src</span> attribute stands for Source. This attribute specifies the URL of the image.</p>
+            <br><p class="note-two" style="margin: 0rem;">Make sure that you enter the correct name and extension of the respective image.</p>
+            <p>Common image extensions include <span class="attribute">.png</span>, <span class="attribute">.jpg</span>, 
+                <span class="attribute">.gif</span>, <span class="attribute">.svg</span>.</p>
+        </div>
+        
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Alternate Text (<span class="attribute">alt</span>)</h3>
+                <p>The alt attribute provides the text you want to display instead of the image in case the image is not displayed by the browser.</p>
+                <p>The image won't be shown if one or more of the mentioned circumstances occur:<br>
+                    <li>Incorrect entry of the file name/extension in the src value.</li>
+                    <li>Slow connection.</li>
+                    <li>If you are using a screen reader.</li>
+                </p>
+                <p>In this case, the alternate text is displayed along with the broken link icon(which can be seen 
+                    on the top left corner).</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.png"</span><span class="attribute"> alt</span>
+                    =<span class="value">"This is how alternate text will be displayed"</span><span class="bracket">&gt;</span><br>
+                    <img src="alternate-tag" style="border: none;" alt="This is how alternate text will be displayed">
+                </p>
+            </div> 
+
+            <hr>
+            
+            <div class="first-section">
+                <h3>Aligning Images (<span class="attribute">align</span>)</h3>
+                <p>The align attribute of the image tag is used to align the images according to the value assigned to it.</p>
+                <p>The values for the align attribute include top, bottom, left and right.</p>
+                <p>The default value of align attribute is bottom.</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> align</span>
+                    =<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.png"</span><span class="attribute"> align</span>
+                    =<span class="value">"right"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.gif"</span><span class="attribute"> align</span>
+                    =<span class="value">"bottom"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.svg"</span><span class="attribute"> align</span>
+                    =<span class="value">"top"</span><span class="bracket">&gt;</span><br>
+                </p>
+                <br>
+
+                <h5>Centering Images</h5>
+                <p>The <span class="bracket">&lt;</span><span class="tag">center</span><span class="bracket">&gt;</span> tag
+                is used to align the images to the center. <br>
+                (Learn more about center tag in the lesson: <u><a href="3basic-tags.html#center-tag">Basic Tags and Attributes in HTML</a></u>)</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">center</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> align</span>
+                    =<span class="value">"top"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">/center</span><span class="bracket">&gt;</span>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="first-section">
+                <h3>Bordering Images (<span class="attribute">border</span>)</h3>
+                <p>The border attribute specifies the width of the border of an image in pixels.</p>
+                <p>There is no default value of the border attribute.</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> align</span>
+                    =<span class="value">"right"</span><span class="attribute"> border</span>=<span class="value">"3"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+            </div>            
+            <!------X----- First Section -----X------>
+
+            <hr> 
+
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3><span class="attribute">height</span> and <span class="attribute">width</span> attribute of an Image.</h3>
+                <p>The HEIGHT and WIDTH attributes of the image tag lets you specify the height and width of an image.</p>
+                <p>The values for these two attributes can be specified either in the form of an integer(pixels) or percentage.</p>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> align</span>
+                    =<span class="value">"top"</span><span class="attribute"> width</span>=<span class="value">"320"</span>
+                    <span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> height</span>=<span class="value">"90%"</span>
+                    <span class="attribute"> width</span>=<span class="value">"70%"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+            </div>
+            
+            <hr>
+
+            <div class="first-section">
+                <h3>Adding Space Around Images</h3>
+                <h5><span class="attribute">VSPACE</span></h5>
+                <p>This attribute specifies the vertical space to be given(i.e. top and bottom) and should be specified in pixels.</p><br>
+                <h5><span class="attribute">HSPACE</span></h5>
+                <p>This attribute specifies the horizontal space to be given(i.e. left and right) and should be specified in pixels.</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"image.jpg"</span><span class="attribute"> vspace</span>
+                    =<span class="value">"20"</span><span class="attribute"> hspace</span>=<span class="value">"30"</span>
+                    <span class="bracket">&gt;</span>
+                </p>
+            </div>
+            <!----X------- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+
+                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                    <h5 style="padding: 10px;">For Example:</h5>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">h1</span><span class="bracket">&gt;</span>Gym Exercises
+                        <span class="bracket">&lt;</span><span class="tag">/h1</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">ol </span><span class="attribute">type</span>=<span class="value">"I"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Bench Press<br>
+                        <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>=<span class="value">"bench_press.jpg"</span>
+                        <span class="attribute">alt</span>=<span class="value">"Bench Press"</span>
+                        <span class="attribute"> align</span>=<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Barbell Rows<br>
+                        <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>=<span class="value">"barbell_rows.jpg"</span>
+                        <span class="attribute">alt</span>=<span class="value">"Barbell Rows"</span>
+                        <span class="attribute"> align</span>=<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Hip Thrust<br>
+                        <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>=<span class="value">"hip_thrust.jpg"</span>
+                        <span class="attribute">alt</span>=<span class="value">"Hip Thrust"</span>
+                        <span class="attribute"> align</span>=<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Weighted Calf Raises<br>
+                        <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>=<span class="value">"calf_raises.gif"</span>
+                        <span class="attribute">alt</span>=<span class="value">"Weighted Calf Raises"</span>
+                        <span class="attribute"> align</span>=<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Deadlifts<br>
+                        <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>=<span class="value">"deadlifts.jpg"</span>
+                        <span class="attribute">alt</span>=<span class="value">"Deadlifts"</span>
+                        <span class="attribute"> align</span>=<span class="value">"left"</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/ol</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./5lists.html"  title="Lists in HTML"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./7a-tag.html" title="Anchor tags"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>

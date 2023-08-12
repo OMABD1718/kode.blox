@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking in HTML | Kode.Blox</title>
+    <link rel="icon" href="../favicon.jpg">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, Basics, Comments, Paragraph, Headings, Background image, background color, 
+    text color, align text">
+
+    <!-- Custom CSS Code Link-->
+    <link rel="stylesheet" href="../HTML/style.css">
+    <!-- Custom CSS for All others -->
+    <link rel="stylesheet" href="./style-two.css">
+
+    <!-- Fonts CSS code Link-->
+    <link rel="stylesheet" href="../CSS common/all.css">
+    <link rel="stylesheet" href="../CSS common/font.css">
+    
+</head>
+
+
+<body>
+    <!------------------------ Sidebar ------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn" title="Contents"></i>
+      <i class="fas fa-times" id="cancel" title="Close"></i>
+    </label>
+    <div class="sidebar">
+       <header>HTML</header>
+       <ul>
+            <li><a href="./1introduction.html">HTML : Introduction</a></li>
+            <li><a href="./2tags.html">HTML Tags</a></li>
+            <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
+            <li><a href="./4font-styling.html">Font Styling</a></li>
+            <li><a href="./5lists.html">Lists in HTML</a></li>
+            <li><a href="./6images.html">Images in HTML</a></li>
+            <li><a href="./7a-tag.html">Linking in HTML</a></li>
+        </ul>
+    </div>
+    <!------------X----------- Sidebar --------------X--------->
+
+
+    <!-----------------------Navigation---------------------->
+    <nav class="nav">
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+    </nav>
+    <nav class="container flex-row">
+        <ul class="course-list">
+            <li class="course-item selected"><a href="../HTML/1introduction.html">HTML</a></li>
+            <li class="course-item"><a href="../CSS/1introduction.html">CSS</a></li>
+        </ul>
+    </nav>
+    <!-----------X-----------Navigation-----------X---------->
+
+
+    <!------------------------------------- Main Body ------------------------------------->
+    <main>
+        <!----------------------- Title of Webpage ---------------------->
+        <h1 class="title"><b>Anchor Tag and its attributes</b></h1><hr>
+        <!-----------X----------- Title of Webpage -----------X---------->
+
+        <!----------------- Introduction Section ----------------->
+        <div class="introduction-section">
+            <p>The Anchor Tag(<span class="bracket">&lt;</span><span class="tag">a</span><span class="bracket">&gt;</span>)
+            is used to link web pages to one another and marks the text as a hypertext link.</p><br>
+            <p>Linking can be done in two ways:
+                <ul>
+                    <li>Internal Linking</li>
+                    <li>External Linking</li>
+                </ul>
+            </p><br>
+            <p>The <span class="bracket">&lt;</span><span class="tag">a</span><span class="bracket">&gt;</span> tag
+            is used to:
+                <ol type="1">
+                    <li>To link one section of the web page to another section on the same web page.</li>
+                    <li>To link the web pages within the same website.</li>
+                    <li>To link to a web page of another website.</li>
+                </ol>
+            </p><br>
+            <p>For Example: <br><span class="bracket">&lt;</span><span class="tag">a</span>&nbsp;<span class="attribute">href</span>
+                =<span class="value">"https://www.kodeblox.com"</span><span class="bracket">&gt;</span> Home&nbsp;|&nbsp;Kode.Blox 
+                <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span></p>
+            <p>The <span class="attribute">href</span> attribute stands for Hypertext Reference.</p>
+            <p>The value of <span class="attribute">href</span> attribute can contain links to another web page or another section of the same web page.</p>
+        </div>
+        
+        <!---------X------- Introduction Section --------X-------->
+        
+        <hr>
+
+        <!--------------------------- Main Content --------------------------->
+        <div class="section">
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Internal Linking</h3>
+                <p>Internal Linking involves linking the different sections of the same web page.</p>
+                <p>Internal Linking requires two instances of <span class="bracket">&lt;</span><span class="tag">a</span><span class="bracket">&gt;</span>
+                    tag.<br>
+                    <ol>
+                        <li><span class="attribute">id</span> attribute <br>
+                        You have to assign an id to refer to a section of the page, which is referred to as an internal link to the same page.</li>
+                        <li><span class="attribute">href</span> attribute <br>
+                        The value of the href attribute for internal linking should be the id of the section followed by the hash sign(#).</li>
+                    </ol>
+                </p><br>
+                <p>For Example: <br>
+                    Introduction... <br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"#part1"</span><span class="bracket">&gt;</span>Go to Part-1
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"#part2"</span><span class="bracket">&gt;</span>Go to Part-2
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"#part3"</span><span class="bracket">&gt;</span>Go to Part-3
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br><br>
+
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">id</span>
+                    =<span class="value">"part1"</span><span class="bracket">&gt;</span>Part-1
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>Content goes here (Part-1)...
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">id</span>
+                    =<span class="value">"part2"</span><span class="bracket">&gt;</span>Part-2
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>Content goes here (Part-2)...
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">id</span>
+                    =<span class="value">"part3"</span><span class="bracket">&gt;</span>Part-3
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">p</span><span class="bracket">&gt;</span>Content goes here (Part-3)...
+                    <span class="bracket">&lt;</span><span class="tag">/p</span><span class="bracket">&gt;</span><br>
+                </p>
+            </div> 
+
+            <hr>
+            
+            <div class="first-section">
+                <h3>External Linking</h3>
+                <p>You can also inter-link the various web pages of your website or link to any other website on the Internet.</p>
+                <p>All you need to do is specify the URL of the page in the <span class="attribute">href</span>&nbsp; attribute.</p>
+                <br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"https://www.kodeblox.com"</span><span class="bracket">&gt;</span> Home&nbsp;|&nbsp;Kode.Blox
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                </p>
+            </div>         
+            <!------X----- First Section -----X------>
+
+            <hr> 
+
+            <!------------ First Section ------------>
+            <div class="first-section">
+                <h3>Using Images as Links</h3>
+                <p>Images can also be used as a hyperlink to link documents.</p>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"https://www.google.com/"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">img</span> <span class="attribute">src</span>
+                    =<span class="value">"google-image.png"</span> <span class="attribute"> width</span>=
+                    <span class="value">"320"</span><span class="bracket">&gt;</span><br>
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span><br>
+                    <a href="https://www.google.com/"><img class="img" src="google.png" alt="Google"></a>
+                </p>
+            </div>                          
+            
+            <hr>
+    
+            <div class="first-section">
+                <h3>E-mail Link</h3>
+                <p>This lets you create a link that allows users to send an email quickly.</p>
+                <p><span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"mailto:contactsojith@gmail.com"</span><span class="bracket">&gt;</span>
+                    Send us an E-mail <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                </p>
+                <p>When you click on the link, the email program will open and fill the "To" field with the email id you mentioned.</p>
+                <br><p>You can also add the subject in the email by typing: </p>
+                <p><span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                =<span class="value">"mailto:contactsojith@gmail.com?subject=Feedback"</span><span class="bracket">&gt;</span>                        Submit your Feedback here<span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span></p>
+            </div>                          
+            
+            <hr>
+
+            <div class="first-section">
+                <h3>Title Attribute (<span class="attribute">title</span>)</h3>
+                <p>The title attribute is used to specify titles to hyperlinks in text format.</p>
+                <p>This text appears when a user hovers the mouse over the link.</p>
+                <p>The tite attribute is an optional attribute.</p><br>
+                <p>For Example: <br>
+                    <span class="bracket">&lt;</span><span class="tag">a</span> <span class="attribute">href</span>
+                    =<span class="value">"https://www.kodeblox.com"</span><span class="attribute"> title</span>
+                    =<span class="value">"Home | Kode.Blox"</span><span class="bracket">&gt;</span>Kode.Blox
+                    <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                </p>
+            </div>
+            <!------X----- First Section -----X------>
+
+            <hr class="mobile-hide tablet-hide">
+
+            <!------------ Second Section ------------>
+            <div class="second">
+                <div class="second-section">
+
+                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                    <h5 style="padding: 10px;">For Example:</h5>
+                    <p>
+                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
+                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">center</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">h2</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">a</span>
+                        <span class="attribute">href</span>=<span class="value">"https://www.fix.com/blog/master-proper-workout-form/"</span>
+                        <span class="bracket">&gt;</span>Master Proper Exercise Form
+                        <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span> |
+                        <span class="bracket">&lt;</span><span class="tag">a</span>
+                        <span class="attribute">href</span>=<span class="value">"https://www.fix.com/blog/"</span>
+                        <span class="bracket">&gt;</span>Fix.com
+                        <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/h2</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/center</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">hr</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">ul </span><span class="attribute">type</span>=<span class="value">"disc"</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Squats<br>
+                        <span class="bracket">&lt;</span><span class="tag">a </span><span class="attribute">href</span>=<span class="value">"https://www.fix.com/blog/master-proper-workout-form/"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">img </span><span class="attribute">src</span>=<span class="value">"proper-squat-form.png"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Planks<br>
+                        <span class="bracket">&lt;</span><span class="tag">a </span><span class="attribute">href</span>=<span class="value">"https://www.fix.com/blog/master-proper-workout-form/"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">img </span><span class="attribute">src</span>=<span class="value">"proper-plank-form.png"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">li</span><span class="bracket">&gt;</span>Deadlifts<br>
+                        <span class="bracket">&lt;</span><span class="tag">a </span><span class="attribute">href</span>=<span class="value">"https://www.fix.com/blog/master-proper-workout-form/"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">img </span><span class="attribute">src</span>=<span class="value">"proper-deadlift-form.png"</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/a</span><span class="bracket">&gt;</span>
+                        <span class="bracket">&lt;</span><span class="tag">/li</span><span class="bracket">&gt;</span><br>
+                        
+                        <span class="bracket">&lt;</span><span class="tag">/ul</span><span class="bracket">&gt;</span><br>
+
+                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
+                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!------X----- Second Section ------X----->
+        </div>
+        <!--------X-----------X------ Main Content -------X----------X-------->
+
+        <!---------------------- Previous-Next buttons ---------------------->
+        <hr>
+        <div class="prev-next">
+            <p><a href="./6images.html" title="Image Tag in HTML"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
+            <p><a href="./8tables.html" title="Table Tag in HTML"><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+        </div>
+        <!----------X----------- Previous-Next buttons ----------X----------->
+    </main>
+    <!---------X------------X--------- Main Body ---------X-------------X-------->
+
+
+    <!--------------------------- Footer --------------------------->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4>
+                <a href="https://www.instagram.com/sojith_sunny1/" target="_blank" title="Instagram">| Designed by &nbsp;&nbsp;<i class="fab fa-instagram"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span>
+                <a href="#top" title="Go to top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <!-----------------X---------------- Footer -----------------X----------------->
+
+
+    <!------------ JavaScript Links ------------>
+    <!--------Custom JavaScript Link-------->
+    <script src="../JS common/custom.js"></script>
+    <!-----X------ JavaScript Links -----X------>
+</body>
+</html>
