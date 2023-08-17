@@ -1,0 +1,1 @@
+document.querySelector('footer.footer .rights.flexrow h4').href='https://github.com/sojith29034';
