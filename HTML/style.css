@@ -206,6 +206,7 @@ nav.nav h1 a:hover{
 
 .container{
     background: #555555;
+    display: none;
 }
 .course-list{
     list-style-type: none;
