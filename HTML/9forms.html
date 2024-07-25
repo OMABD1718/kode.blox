@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="../CSS common/all.css">
     <link rel="stylesheet" href="../CSS common/font.css">
 
-    
+
 </head>
 
 
@@ -27,12 +28,12 @@
     <!------------------------ Sidebar ------------------------>
     <input type="checkbox" id="check">
     <label for="check">
-      <i class="fas fa-bars" id="btn" title="Contents"></i>
-      <i class="fas fa-times" id="cancel" title="Close"></i>
+        <i class="fas fa-bars" id="btn" title="Contents"></i>
+        <i class="fas fa-times" id="cancel" title="Close"></i>
     </label>
     <div class="sidebar">
-       <header>HTML</header>
-       <ul>
+        <header>HTML</header>
+        <ul>
             <li><a href="./1introduction.html">HTML : Introduction</a></li>
             <li><a href="./2tags.html">HTML Tags</a></li>
             <li><a href="./3basic-tags.html">Basic HTML Tags</a></li>
@@ -49,7 +50,8 @@
 
     <!-----------------------Navigation---------------------->
     <nav class="nav">
-        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a></h1>
+        <h1><a href="../home.html" title="Kode.Blox|Home">Kode.<span style="color:rgb(0, 247, 255);">Blox</span></a>
+        </h1>
     </nav>
     <nav class="container flex-row">
         <ul class="course-list">
@@ -63,7 +65,8 @@
     <!------------------------------------- Main Body ------------------------------------->
     <main>
         <!----------------------- Title of Webpage ---------------------->
-        <h1 class="title"><b>Creating Web Forms</b></h1><hr>
+        <h1 class="title"><b>Creating Web Forms</b></h1>
+        <hr>
         <!-----------X----------- Title of Webpage -----------X---------->
 
         <!----------------- Introduction Section ----------------->
@@ -72,17 +75,17 @@
             <p>Web users fill out the forms using checkboxes, radio buttons, text fields and many more elements. These
                 elements are called Form Controls.</p>
             <p>The making of a simple HTML form requires two elements, the Form Element and an Input Element.
-                <ul>
-                    <li>The <span class="bracket">&lt;</span><span class="tag">form</span><span class="bracket">&gt;</span>
+            <ul>
+                <li>The <span class="bracket">&lt;</span><span class="tag">form</span><span class="bracket">&gt;</span>
                     tag sets up an area for a form.</li>
-                    <li>The <span class="bracket">&lt;</span><span class="tag">input</span><span class="bracket">&gt;</span>
+                <li>The <span class="bracket">&lt;</span><span class="tag">input</span><span class="bracket">&gt;</span>
                     tag is nested within the form element and is used to create various form controls.</li>
-                </ul>
+            </ul>
             </p>
         </div>
-        
+
         <!---------X------- Introduction Section --------X-------->
-        
+
         <hr>
 
         <!--------------------------- Main Content --------------------------->
@@ -90,208 +93,422 @@
             <!------------ First Section ------------>
             <div class="first-section">
                 <h3 style="margin-bottom: 1rem;">The Form Element and its Attributes</h3>
-                <p>Every form begins with a <span class="bracket">&lt;</span><span class="tag">form</span><span class="bracket">&gt;</span>
-                tag and ends with a <span class="bracket">&lt;</span><span class="tag">/form</span><span class="bracket">&gt;</span> tag. <br>
-                Within these tags are some unique elements for each form control (such as the text area, input tag, and buttons).</p><br>
+                <p>Every form begins with a <span class="bracket">&lt;</span><span class="tag">form</span><span
+                        class="bracket">&gt;</span>
+                    tag and ends with a <span class="bracket">&lt;</span><span class="tag">/form</span><span
+                        class="bracket">&gt;</span> tag. <br>
+                    Within these tags are some unique elements for each form control (such as the text area, input tag,
+                    and buttons).</p><br>
 
                 <div>
-                    <p>To set up a form, you will need to specify two important attributes; Action attribute and Method attribute.</p>
-                    
-                    <li><span class="attribute">action</span> - Specifies the page that the form is submitted to.
-                    The value could be a URL or an e-mail address (with the <i>mailto</i> &nbsp;function).</li>
+                    <p>To set up a form, you will need to specify two important attributes; Action attribute and Method
+                        attribute.</p>
 
-                    <li><span class="attribute">method</span> - Specifies the color of the border of the table. The default color is gray, 
-                    but you can change it by assigning a different color name.</li>
-                </div>
-            </div> 
 
-            <hr>
-            
-            <div class="first-section">
-                <h3 style="margin-bottom: 1rem;">Attributes of the 
-                <span class="bracket">&lt;</span><span class="tag">tr</span><span class="bracket">&gt;</span>,
-                <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span> and 
-                <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>
-                Tags</h3>
+                    <li><span class="attribute">action</span> - The action attribute defines the action to be performed
+                        when the form is submitted.</li>
 
-                <table style="font-family: var(--Livvic);" class="mobile-hide tablet-hide">
-                    <tr style="height: 5rem;"><td style="text-align: center;"><span class="attribute">bordercolor</span></td><td>You can set the color of the border of any specific cell of the table.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">tr</span>&nbsp;<span class="attribute">bordercolor</span>=<span class="value">"red"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                    <tr style="height: 5rem;"><td style="text-align: center;"><span class="attribute">bgcolor</span></td><td>You can set the background color of any specific cell of the table.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">th</span>&nbsp;<span class="attribute">bgcolor</span>=<span class="value">"yellow"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                    <tr><td style="text-align: center;"><span class="attribute">align</span></td><td>Lets you set the alignment of text within cells. The default alignment is left. 
-                        The alignment can be set to center, right or left.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">bgcolor</span> = <span class="value">"yellow"</span>
-                            <span class="attribute">align</span>&nbsp;= <span class="value">"center"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                    <tr><td style="text-align: center;"><span class="attribute">valign</span></td><td>This attribute is used to set the vertical alignment of text within cells.
-                        The default vertical alignment is center. The vertical alignment can be set to middle, top or bottom.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">align</span>=<span class="value">"center"</span>
-                            <span class="attribute">bordercolor</span>=<span class="value">"red"</span> <span class="attribute">valign</span>=<span class="value">"bottom"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                    <tr><td rowspan="2" style="width: 7rem; text-align: center; padding: 0px"><b>Spanning</b><center><hr style="width: 95%; margin: 0rem 0rem; color: blue;"></center>Combining multiple cells to make a single cell.</td>
-                        <td><span class="attribute">colspan</span> - The COLSPAN attribe combines two or more horizontally-placed cells. It specifies the number of cells to be combined.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">th</span> <span class="attribute">bordercolor</span>=<span class="value">"red"</span>
-                        <span class="attribute">colspan</span>=<span class="value">"5"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                    <tr><td><span class="attribute">rowspan</span> - The ROWSPAN attribe combines two or more vertically-placed cells. It specifies the number of cells to be combined.</td>
-                        <td><span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">bgcolor</span>=<span class="value">"yellow"</span>
-                        <span class="attribute">rowspan</span>=<span class="value">"3"</span><span class="bracket">&gt;</span></td>
-                    </tr>
-                </table>
+                    <li><span class="attribute">target</span> - The target attribute specifies where to display the
+                        response that is received after submitting the form.</li>
 
-                <div class="laptop-hide">
-                    <p><span class="attribute">bordercolor</span> - You can set the color of the border of any specific cell of the table.</p>
-                    <p><span class="attribute">bgcolor</span> - You can set the background color of any specific cell of the table.</p>
-                    <p><span class="attribute">align</span> - Lets you set the alignment of text within cells. The default alignment is left. 
-                        The alignment can be set to center, right or left.</p>
-                    <p><span class="attribute">valign</span> - This attribute is used to set the vertical alignment of text within cells.
-                        The default vertical alignment is center. The vertical alignment can be set to middle, top or bottom.</p>
-                    <p><span class="attribute">colspan</span> - The COLSPAN attribe combines two or more horizontally-placed cells. 
-                        It specifies the number of cells to be combined.</p>
-                    <p><span class="attribute">rowspan</span> - The ROWSPAN attribe combines two or more vertically-placed cells. 
-                        It specifies the number of cells to be combined.</p>
-                </div>
-            </div>            
-            <!------X----- First Section -----X------>
+                    <li><span class="attribute">method</span> - The method attribute specifies the HTTP method to be
+                        used when submitting the form data.
 
-            <hr class="mobile-hide tablet-hide">
-
-            <!------------ Second Section ------------>
-            
-            <div class="second">
-                <div class="second-section">
-
-                    <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
-                    <h5 style="padding: 10px;">For Example:</h5>
-                    <p>
-                        <span class="bracket">&lt;</span><span class="tag">html</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">head</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">title</span><span class="bracket">&gt;</span>Example | Kode.Blox
-                        <span class="bracket">&lt;</span><span class="tag">/title</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/head</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">body</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">table</span> <span class="attribute">cellpadding</span>=<span class="value">"3"</span>
-                        <span class="attribute">border</span>=<span class="value">"2"</span> <span class="attribute">bordercolor</span>=<span class="value">"red"</span>
-                        <span class="attribute">height</span>=<span class="value">"100%"</span> <span class="attribute">width</span>=<span class="value">"100%"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">tr</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">th</span> <span class="attribute">colspan</span>=<span class="value">"4"</span>
-                        <span class="attribute">bordercolor</span>=<span class="value">"red"</span><span class="bracket">&gt;</span> 
-                        <span class="bracket">&lt;</span><span class="tag">font</span> <span class="attribute">size</span>=<span class="value">"5"</span>
-                        <span class="attribute">color</span>=<span class="value">"red"</span><span class="bracket">&gt;</span> 
-                        Workout Log<span class="bracket">&lt;</span><span class="tag">/font</span><span class="bracket">&gt;</span> 
-                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">align</span>
-                        =<span class="value">"center"</span> <span class="attribute">bgcolor</span>=<span class="value">"#FFB8A6"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>NAME
-                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Chest Exercises
-                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Back Exercises
-                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">th</span><span class="bracket">&gt;</span>Leg Exercises
-                        <span class="bracket">&lt;</span><span class="tag">/th</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-                        
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
-                        Nehmar<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Barbell bench press
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Lat pulldown
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Lunges
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Cable crossovers
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Wide dumbbell row
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Single-Leg Deadlift
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-                        
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
-                        Ristiano<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Pushups
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Pullups
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Squats
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bar Dips
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bodyweight Rows
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Bulgarian Split Squat
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span> <span class="attribute">rowspan</span>=<span class="value">"2"</span><span class="bracket">&gt;</span>
-                        Lashford<span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Isometric Chest Squeeze
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Single-arm dumbbell row
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Seated Leg Press
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">tr </span><span class="attribute">valign</span>=<span class="value">"middle"</span>
-                        <span class="attribute">align</span>=<span class="value">"center"</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Seated Machine Chest Press
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Reverse-grip row
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span>
-                        <span class="bracket">&lt;</span><span class="tag">td</span><span class="bracket">&gt;</span>Angled Leg Curl
-                        <span class="bracket">&lt;</span><span class="tag">/td</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/tr</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">/table</span><span class="bracket">&gt;</span><br>
-
-                        <span class="bracket">&lt;</span><span class="tag">/body</span><span class="bracket">&gt;</span><br>
-                        <span class="bracket">&lt;</span><span class="tag">/html</span><span class="bracket">&gt;</span><br>
-                    </p>
-                    </div>
+                        The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with
+                        method="post").</li>
                 </div>
             </div>
-            <!------X----- Second Section ------X----->
-        </div>
-        <!--------X-----------X------ Main Content -------X----------X-------->
 
-        <!---------------------- Previous-Next buttons ---------------------->
-        <hr>
-        <div class="prev-next">
-            <p><a href="./8tables.html"  title="Tables in HTML"><i class="fas fa-arrow-left" id="prev"></i> <span>Prev</span></a></p>
-            <p><a href="lol"  title=""><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
-        </div>
-        <!----------X----------- Previous-Next buttons ----------X----------->
+            <hr>
+
+
+
+            <div class="section">
+                <!------------ First Section ------------>
+                <div class="first-section">
+                    <h3 style="margin-bottom: 1rem;">HTML Form Elements</h3>
+                    <p>The HTML <span class="bracket">&lt;</span><span class="tag">form</span><span
+                            class="bracket">&gt;</span>
+                        element can contain one or more of the following form elements : <br>
+                    </p><br>
+
+                    <div>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">input</span><span
+                                class="bracket">&gt;</span> - This element can be displayed in several ways, depending
+                            on the <span class="tag">type</span> attribute.</li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">label</span><span
+                                class="bracket">&gt;</span> - The <span class="bracket">&lt;</span>label<span
+                                class="bracket">&gt;</span> element defines a label for several form elements.</li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">select</span><span
+                                class="bracket">&gt;</span> - The <span class="bracket">&lt;</span>select<span
+                                class="bracket">&gt;</span> element defines a drop-down list:</li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">textarea</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">button</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">fieldset</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">legend</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">datalist</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">output</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">option</span><span
+                                class="bracket">&gt;</span></li>
+
+                        <li><span class="bracket">&lt;</span><span class="attribute">optgroup</span><span
+                                class="bracket">&gt;</span></li>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--------X-----------X------ Main Content -------X----------X-------->
+
+                <div class="second">
+                    <div class="second-section">
+
+                        <div class="example mobile-hide tablet-hide" style="padding: 0px 10px 30px 10px;">
+                            <h5 style="padding: 10px;">For Example:</h5>
+                            <p>
+                                <span class="bracket">&lt;</span><span class="tag">html</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">head</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">title</span><span
+                                    class="bracket">&gt;</span>Example | Kode.Blox
+                                <span class="bracket">&lt;</span><span class="tag">/title</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/head</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">body</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">form</span> <span
+                                    class="attribute">action</span>=<span class="value">"/submit"</span> <span
+                                    class="attribute">method</span>=<span class="value">"post"</span> <span
+                                    class="attribute">enctype</span>=<span class="value">"multipart/form-data"</span>
+                                <span class="attribute">autocomplete</span>=<span class="value">"on"</span> <span
+                                    class="attribute">novalidate</span><span class="bracket">&gt;</span><br>
+
+                                <!-- Text input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"username"</span><span
+                                    class="bracket">&gt;</span>Username:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"text"</span> <span
+                                    class="attribute">id</span>=<span class="value">"username"</span> <span
+                                    class="attribute">name</span>=<span class="value">"username"</span> <span
+                                    class="attribute">required</span> <span class="attribute">minlength</span>=<span
+                                    class="value">"3"</span> <span class="attribute">maxlength</span>=<span
+                                    class="value">"25"</span> <span class="attribute">placeholder</span>=<span
+                                    class="value">"Enter your username"</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Password input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"password"</span><span
+                                    class="bracket">&gt;</span>Password:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"password"</span> <span
+                                    class="attribute">id</span>=<span class="value">"password"</span> <span
+                                    class="attribute">name</span>=<span class="value">"password"</span> <span
+                                    class="attribute">required</span> <span class="attribute">minlength</span>=<span
+                                    class="value">"8"</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Email input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"email"</span><span
+                                    class="bracket">&gt;</span>Email:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"email"</span> <span
+                                    class="attribute">id</span>=<span class="value">"email"</span> <span
+                                    class="attribute">name</span>=<span class="value">"email"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- URL input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"website"</span><span
+                                    class="bracket">&gt;</span>Website:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"url"</span> <span
+                                    class="attribute">id</span>=<span class="value">"website"</span> <span
+                                    class="attribute">name</span>=<span class="value">"website"</span> <span
+                                    class="attribute">placeholder</span>=<span
+                                    class="value">"https://example.com"</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Telephone input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"phone"</span><span
+                                    class="bracket">&gt;</span>Phone:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"tel"</span> <span
+                                    class="attribute">id</span>=<span class="value">"phone"</span> <span
+                                    class="attribute">name</span>=<span class="value">"phone"</span> <span
+                                    class="attribute">pattern</span>=<span
+                                    class="value">"[0-9]{3}-[0-9]{3}-[0-9]{4}"</span> <span
+                                    class="attribute">placeholder</span>=<span class="value">"123-456-7890"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Number input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"age"</span><span
+                                    class="bracket">&gt;</span>Age:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"number"</span> <span
+                                    class="attribute">id</span>=<span class="value">"age"</span> <span
+                                    class="attribute">name</span>=<span class="value">"age"</span> <span
+                                    class="attribute">required</span> <span class="attribute">min</span>=<span
+                                    class="value">"18"</span> <span class="attribute">max</span>=<span
+                                    class="value">"100"</span> <span class="attribute">step</span>=<span
+                                    class="value">"1"</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Date input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"birthday"</span><span
+                                    class="bracket">&gt;</span>Birthday:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"date"</span> <span
+                                    class="attribute">id</span>=<span class="value">"birthday"</span> <span
+                                    class="attribute">name</span>=<span class="value">"birthday"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Month input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"start-month"</span><span
+                                    class="bracket">&gt;</span>Start Month:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"month"</span> <span
+                                    class="attribute">id</span>=<span class="value">"start-month"</span> <span
+                                    class="attribute">name</span>=<span class="value">"start-month"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Week input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"start-week"</span><span
+                                    class="bracket">&gt;</span>Start Week:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"week"</span> <span
+                                    class="attribute">id</span>=<span class="value">"start-week"</span> <span
+                                    class="attribute">name</span>=<span class="value">"start-week"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Time input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"appointment-time"</span><span
+                                    class="bracket">&gt;</span>Appointment Time:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"time"</span> <span
+                                    class="attribute">id</span>=<span class="value">"appointment-time"</span> <span
+                                    class="attribute">name</span>=<span class="value">"appointment-time"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- DateTime-Local input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"meeting-time"</span><span
+                                    class="bracket">&gt;</span>Meeting Time:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"datetime-local"</span> <span
+                                    class="attribute">id</span>=<span class="value">"meeting-time"</span> <span
+                                    class="attribute">name</span>=<span class="value">"meeting-time"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Search input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"search"</span><span
+                                    class="bracket">&gt;</span>Search:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"search"</span> <span
+                                    class="attribute">id</span>=<span class="value">"search"</span> <span
+                                    class="attribute">name</span>=<span class="value">"search"</span> <span
+                                    class="attribute">placeholder</span>=<span class="value">"Search here"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- File input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"resume"</span><span
+                                    class="bracket">&gt;</span>Resume:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"file"</span> <span
+                                    class="attribute">id</span>=<span class="value">"resume"</span> <span
+                                    class="attribute">name</span>=<span class="value">"resume"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Hidden input -->
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"hidden"</span> <span
+                                    class="attribute">id</span>=<span class="value">"hidden-info"</span> <span
+                                    class="attribute">name</span>=<span class="value">"hidden-info"</span> <span
+                                    class="attribute">value</span>=<span class="value">"12345"</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Color input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"fav-color"</span><span
+                                    class="bracket">&gt;</span>Favorite Color:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"color"</span> <span
+                                    class="attribute">id</span>=<span class="value">"fav-color"</span> <span
+                                    class="attribute">name</span>=<span class="value">"fav-color"</span> <span
+                                    class="attribute">required</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Number Range input -->
+                                <span class="bracket">&lt;</span><span class="tag">div</span> <span
+                                    class="attribute">class</span>=<span class="value">"form-group"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">label</span> <span
+                                    class="attribute">for</span>=<span class="value">"satisfaction"</span><span
+                                    class="bracket">&gt;</span>Satisfaction:<span class="bracket">&lt;</span><span
+                                    class="tag">/label</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">input</span> <span
+                                    class="attribute">type</span>=<span class="value">"range"</span> <span
+                                    class="attribute">id</span>=<span class="value">"satisfaction"</span> <span
+                                    class="attribute">name</span>=<span class="value">"satisfaction"</span> <span
+                                    class="attribute">min</span>=<span class="value">"0"</span> <span
+                                    class="attribute">max</span>=<span class="value">"10"</span> <span
+                                    class="attribute">step</span>=<span class="value">"1"</span> <span
+                                    class="attribute">value</span>=<span class="value">"5"</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/div</span><span
+                                    class="bracket">&gt;</span><br>
+
+                                <!-- Reset and Submit buttons -->
+                                <span class="bracket">&lt;</span><span class="tag">button</span> <span
+                                    class="attribute">type</span>=<span class="value">"reset"</span> <span
+                                    class="attribute">class</span>=<span class="value">"btn btn-secondary"</span><span
+                                    class="bracket">&gt;</span>Reset<span class="bracket">&lt;</span><span
+                                    class="tag">/button</span><span class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">button</span> <span
+                                    class="attribute">type</span>=<span class="value">"submit"</span> <span
+                                    class="attribute">class</span>=<span class="value">"btn btn-primary"</span><span
+                                    class="bracket">&gt;</span>Submit<span class="bracket">&lt;</span><span
+                                    class="tag">/button</span><span class="bracket">&gt;</span><br>
+
+                                <span class="bracket">&lt;</span><span class="tag">/form</span><span
+                                    class="bracket">&gt;</span><br>
+                                </code></pre>
+                                <span class="bracket">&lt;</span><span class="tag">/body</span><span
+                                    class="bracket">&gt;</span><br>
+                                <span class="bracket">&lt;</span><span class="tag">/html</span><span
+                                    class="bracket">&gt;</span><br>
+                            </p>`
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---------------------- Previous-Next buttons ---------------------->
+                <hr>
+                <div class="prev-next">
+                    <p><a href="./8tables.html" title="Tables in HTML"><i class="fas fa-arrow-left" id="prev"></i>
+                            <span>Prev</span></a></p>
+                    <p><a href="lol" title=""><span>Next</span> <i class="fas fa-arrow-right" id="next"></i></a></p>
+                </div>
+                <!----------X----------- Previous-Next buttons ----------X----------->
     </main>
     <!---------X------------X--------- Main Body ---------X-------------X-------->
 
-    
+
 
     <!--------------------------- Footer --------------------------->
     <footer class="footer">
         <div class="rights flex-row">
             <h4>
-                <a href="https://github.com/sojith29034" target="_blank" title="Github">| Made by &nbsp;&nbsp;<i class="fab fa-github"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
+                <a href="https://github.com/sojith29034" target="_blank" title="Github">| Made by &nbsp;&nbsp;<i
+                        class="fab fa-github"></i><span style="text-decoration: underline;">Sojith Sunny</span> |</a>
             </h4>
         </div>
         <div class="move-up">
@@ -308,4 +525,5 @@
     <script src="../JS common/custom.js"></script>
     <!-----X------ JavaScript Links -----X------>
 </body>
+
 </html>
